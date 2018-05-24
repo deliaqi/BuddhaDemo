@@ -13,6 +13,9 @@
 		1A0C9D3720B1471600A94B73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A0C9D3620B1471600A94B73 /* Assets.xcassets */; };
 		1A0C9D3A20B1471600A94B73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A0C9D3820B1471600A94B73 /* LaunchScreen.storyboard */; };
 		1A0C9D3D20B1471600A94B73 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0C9D3C20B1471600A94B73 /* main.m */; };
+		1A0C9D4420B14AC500A94B73 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A0C9D4320B14AC500A94B73 /* 1.png */; };
+		1A49D1C720B6E4F4006DF5B9 /* TGStreamMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A0C9D4820B14CB800A94B73 /* TGStreamMac.framework */; };
+		1A49D1CA20B6EB3C006DF5B9 /* PrinterLibs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A49D1C520B6E43E006DF5B9 /* PrinterLibs.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		1A0C9D3920B1471600A94B73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A0C9D3B20B1471600A94B73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A0C9D3C20B1471600A94B73 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1A0C9D4320B14AC500A94B73 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		1A0C9D4820B14CB800A94B73 /* TGStreamMac.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TGStreamMac.framework; sourceTree = "<group>"; };
+		1A49D1C520B6E43E006DF5B9 /* PrinterLibs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PrinterLibs.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +39,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A49D1C720B6E4F4006DF5B9 /* TGStreamMac.framework in Frameworks */,
+				1A49D1CA20B6EB3C006DF5B9 /* PrinterLibs.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,8 +50,11 @@
 		1A0C9D2120B1471300A94B73 = {
 			isa = PBXGroup;
 			children = (
+				1A49D1C520B6E43E006DF5B9 /* PrinterLibs.framework */,
+				1A0C9D4820B14CB800A94B73 /* TGStreamMac.framework */,
 				1A0C9D2C20B1471300A94B73 /* BuddhaDemo */,
 				1A0C9D2B20B1471300A94B73 /* Products */,
+				1A49D1C420B6E43D006DF5B9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +69,9 @@
 		1A0C9D2C20B1471300A94B73 /* BuddhaDemo */ = {
 			isa = PBXGroup;
 			children = (
+				1A0C9D3B20B1471600A94B73 /* Info.plist */,
+				1A0C9D3C20B1471600A94B73 /* main.m */,
+				1A0C9D4B20B14DD800A94B73 /* Supporting Files */,
 				1A0C9D2D20B1471300A94B73 /* AppDelegate.h */,
 				1A0C9D2E20B1471300A94B73 /* AppDelegate.m */,
 				1A0C9D3020B1471300A94B73 /* ViewController.h */,
@@ -65,10 +79,23 @@
 				1A0C9D3320B1471300A94B73 /* Main.storyboard */,
 				1A0C9D3620B1471600A94B73 /* Assets.xcassets */,
 				1A0C9D3820B1471600A94B73 /* LaunchScreen.storyboard */,
-				1A0C9D3B20B1471600A94B73 /* Info.plist */,
-				1A0C9D3C20B1471600A94B73 /* main.m */,
 			);
 			path = BuddhaDemo;
+			sourceTree = "<group>";
+		};
+		1A0C9D4B20B14DD800A94B73 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1A0C9D4320B14AC500A94B73 /* 1.png */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1A49D1C420B6E43D006DF5B9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A0C9D3A20B1471600A94B73 /* LaunchScreen.storyboard in Resources */,
+				1A0C9D4420B14AC500A94B73 /* 1.png in Resources */,
 				1A0C9D3720B1471600A94B73 /* Assets.xcassets in Resources */,
 				1A0C9D3520B1471300A94B73 /* Main.storyboard in Resources */,
 			);
@@ -283,8 +311,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UV33YUF75J;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = BuddhaDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -292,6 +325,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.LiuJiaqi.BuddhaDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -300,8 +334,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UV33YUF75J;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = BuddhaDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -309,6 +348,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.LiuJiaqi.BuddhaDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

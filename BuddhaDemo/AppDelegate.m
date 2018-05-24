@@ -7,8 +7,13 @@
 //
 
 #import "AppDelegate.h"
+//#import <TGStreamMac/TGStreamForMac.h>
+//#import <TGStreamMac/TGSEEGPower.h>
 
-@interface AppDelegate ()
+@interface AppDelegate (){
+    
+//    TGStreamForMac           *streamMac;
+}
 
 @end
 
