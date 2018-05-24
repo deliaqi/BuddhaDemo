@@ -54,7 +54,6 @@
 				1A0C9D4820B14CB800A94B73 /* TGStreamMac.framework */,
 				1A0C9D2C20B1471300A94B73 /* BuddhaDemo */,
 				1A0C9D2B20B1471300A94B73 /* Products */,
-				1A49D1C420B6E43D006DF5B9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,13 +88,6 @@
 				1A0C9D4320B14AC500A94B73 /* 1.png */,
 			);
 			path = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		1A49D1C420B6E43D006DF5B9 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
