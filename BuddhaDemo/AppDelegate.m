@@ -7,12 +7,15 @@
 //
 
 #import "AppDelegate.h"
-//#import <TGStreamMac/TGStreamForMac.h>
-//#import <TGStreamMac/TGSEEGPower.h>
+
+//#import "POSPrinting.m"
+
+#import <TGStreamMac/TGStreamForMac.h>
+#import <TGStreamMac/TGSEEGPower.h>
 
 @interface AppDelegate (){
     
-//    TGStreamForMac           *streamMac;
+    TGStreamForMac           *streamMac;
 }
 
 @end
@@ -22,6 +25,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
     return YES;
 }
 

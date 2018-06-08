@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-//#import <TGStreamMac/TGStreamDelegate.h>
+//#import <Cocoa/Cocoa.h>
+#import <TGStreamMac/TGStreamDelegate.h>
 
 @interface AppDelegate : NSObject <UIApplicationDelegate>
 

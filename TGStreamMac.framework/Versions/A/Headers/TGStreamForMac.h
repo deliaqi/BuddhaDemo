@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <IOBluetooth/IOBluetooth.h>
+//#import <IOBluetooth/IOBluetooth.h>
 
 #import "TGStreamDelegate.h"
 

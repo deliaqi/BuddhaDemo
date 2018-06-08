@@ -7,8 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
+#import <AVKit/AVKit.h>
+//#import <MediaPlayer/MediaPlayer.h>
 
 @interface ViewController : UIViewController
+{
+//    MPMoviePlayerViewController *moviePlayer;
+//    AVPlayerViewController *moviePlayer;
+}
+//-(IBAction)playVideo:(id)sender;
 
 
 @end
