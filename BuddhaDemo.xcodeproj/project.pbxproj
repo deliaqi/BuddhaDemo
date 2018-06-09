@@ -12,10 +12,14 @@
 		1A0C9D3520B1471300A94B73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A0C9D3320B1471300A94B73 /* Main.storyboard */; };
 		1A0C9D3720B1471600A94B73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A0C9D3620B1471600A94B73 /* Assets.xcassets */; };
 		1A0C9D3D20B1471600A94B73 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A0C9D3C20B1471600A94B73 /* main.m */; };
-		1A49D1C720B6E4F4006DF5B9 /* TGStreamMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A0C9D4820B14CB800A94B73 /* TGStreamMac.framework */; };
 		1A49D1CA20B6EB3C006DF5B9 /* PrinterLibs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A49D1C520B6E43E006DF5B9 /* PrinterLibs.framework */; };
 		1A49D1CC20B6EE83006DF5B9 /* POSPrinting.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A49D1CB20B6EE83006DF5B9 /* POSPrinting.m */; };
 		1A5B7BC920CA3C7000115586 /* test.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 1A5B7BC820CA379600115586 /* test.mp4 */; };
+		1A5B7BCC20CA4B4800115586 /* VideoPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5B7BCB20CA4B4800115586 /* VideoPlayerView.m */; };
+		1A5B7BF920CA5A0D00115586 /* StreamSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A5B7BF420CA5A0D00115586 /* StreamSDK.a */; };
+		1A5B7BFC20CA5A3500115586 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A5B7BFB20CA5A3500115586 /* UIKit.framework */; };
+		1A5B7BFE20CA5A3E00115586 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A5B7BFD20CA5A3E00115586 /* Foundation.framework */; };
+		1A5B7C0020CA725800115586 /* 1.mov in Resources */ = {isa = PBXBuildFile; fileRef = 1A5B7BFF20CA725800115586 /* 1.mov */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,10 +32,19 @@
 		1A0C9D3620B1471600A94B73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A0C9D3B20B1471600A94B73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A0C9D3C20B1471600A94B73 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1A0C9D4820B14CB800A94B73 /* TGStreamMac.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TGStreamMac.framework; sourceTree = "<group>"; };
 		1A49D1C520B6E43E006DF5B9 /* PrinterLibs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PrinterLibs.framework; sourceTree = "<group>"; };
 		1A49D1CB20B6EE83006DF5B9 /* POSPrinting.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = POSPrinting.m; sourceTree = "<group>"; };
 		1A5B7BC820CA379600115586 /* test.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.mp4; sourceTree = "<group>"; };
+		1A5B7BCA20CA4B4700115586 /* VideoPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VideoPlayerView.h; path = ../../../../../Git/AVPlayerDemo/Video/VideoPlayerView.h; sourceTree = "<group>"; };
+		1A5B7BCB20CA4B4800115586 /* VideoPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VideoPlayerView.m; path = ../../../../../Git/AVPlayerDemo/Video/VideoPlayerView.m; sourceTree = "<group>"; };
+		1A5B7BF420CA5A0D00115586 /* StreamSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = StreamSDK.a; sourceTree = "<group>"; };
+		1A5B7BF520CA5A0D00115586 /* TGStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGStream.h; sourceTree = "<group>"; };
+		1A5B7BF620CA5A0D00115586 /* TGStreamDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGStreamDelegate.h; sourceTree = "<group>"; };
+		1A5B7BF720CA5A0D00115586 /* TGStreamEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGStreamEnum.h; sourceTree = "<group>"; };
+		1A5B7BF820CA5A0D00115586 /* TGSEEGPower.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGSEEGPower.h; sourceTree = "<group>"; };
+		1A5B7BFB20CA5A3500115586 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1A5B7BFD20CA5A3E00115586 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1A5B7BFF20CA725800115586 /* 1.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = 1.mov; path = ../../../../../../Downloads/1.mov; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,7 +52,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A49D1C720B6E4F4006DF5B9 /* TGStreamMac.framework in Frameworks */,
+				1A5B7BFE20CA5A3E00115586 /* Foundation.framework in Frameworks */,
+				1A5B7BFC20CA5A3500115586 /* UIKit.framework in Frameworks */,
+				1A5B7BF920CA5A0D00115586 /* StreamSDK.a in Frameworks */,
 				1A49D1CA20B6EB3C006DF5B9 /* PrinterLibs.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -51,9 +66,9 @@
 			isa = PBXGroup;
 			children = (
 				1A49D1C520B6E43E006DF5B9 /* PrinterLibs.framework */,
-				1A0C9D4820B14CB800A94B73 /* TGStreamMac.framework */,
 				1A0C9D2C20B1471300A94B73 /* BuddhaDemo */,
 				1A0C9D2B20B1471300A94B73 /* Products */,
+				1A5B7BFA20CA5A3400115586 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,10 +83,13 @@
 		1A0C9D2C20B1471300A94B73 /* BuddhaDemo */ = {
 			isa = PBXGroup;
 			children = (
+				1A5B7BF320CA5A0D00115586 /* StreamSDK */,
 				1A0C9D3B20B1471600A94B73 /* Info.plist */,
 				1A0C9D3C20B1471600A94B73 /* main.m */,
 				1A0C9D4B20B14DD800A94B73 /* Supporting Files */,
 				1A0C9D2D20B1471300A94B73 /* AppDelegate.h */,
+				1A5B7BCA20CA4B4700115586 /* VideoPlayerView.h */,
+				1A5B7BCB20CA4B4800115586 /* VideoPlayerView.m */,
 				1A0C9D2E20B1471300A94B73 /* AppDelegate.m */,
 				1A0C9D3020B1471300A94B73 /* ViewController.h */,
 				1A0C9D3120B1471300A94B73 /* ViewController.m */,
@@ -85,9 +103,31 @@
 		1A0C9D4B20B14DD800A94B73 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1A5B7BFF20CA725800115586 /* 1.mov */,
 				1A5B7BC820CA379600115586 /* test.mp4 */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1A5B7BF320CA5A0D00115586 /* StreamSDK */ = {
+			isa = PBXGroup;
+			children = (
+				1A5B7BF420CA5A0D00115586 /* StreamSDK.a */,
+				1A5B7BF520CA5A0D00115586 /* TGStream.h */,
+				1A5B7BF620CA5A0D00115586 /* TGStreamDelegate.h */,
+				1A5B7BF720CA5A0D00115586 /* TGStreamEnum.h */,
+				1A5B7BF820CA5A0D00115586 /* TGSEEGPower.h */,
+			);
+			path = StreamSDK;
+			sourceTree = "<group>";
+		};
+		1A5B7BFA20CA5A3400115586 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A5B7BFD20CA5A3E00115586 /* Foundation.framework */,
+				1A5B7BFB20CA5A3500115586 /* UIKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +189,7 @@
 			files = (
 				1A5B7BC920CA3C7000115586 /* test.mp4 in Resources */,
 				1A0C9D3720B1471600A94B73 /* Assets.xcassets in Resources */,
+				1A5B7C0020CA725800115586 /* 1.mov in Resources */,
 				1A0C9D3520B1471300A94B73 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -160,6 +201,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A5B7BCC20CA4B4800115586 /* VideoPlayerView.m in Sources */,
 				1A0C9D3220B1471300A94B73 /* ViewController.m in Sources */,
 				1A49D1CC20B6EE83006DF5B9 /* POSPrinting.m in Sources */,
 				1A0C9D3D20B1471600A94B73 /* main.m in Sources */,
@@ -308,7 +350,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/BuddhaDemo/StreamSDK",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.LiuJiaqi.BuddhaDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -333,7 +378,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/BuddhaDemo/StreamSDK",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.LiuJiaqi.BuddhaDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

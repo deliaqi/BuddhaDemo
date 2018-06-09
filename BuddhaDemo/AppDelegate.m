@@ -10,12 +10,8 @@
 
 //#import "POSPrinting.m"
 
-#import <TGStreamMac/TGStreamForMac.h>
-#import <TGStreamMac/TGSEEGPower.h>
-
 @interface AppDelegate (){
     
-    TGStreamForMac           *streamMac;
 }
 
 @end
@@ -26,7 +22,26 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
+    
     return YES;
+}
+
+// TODO: Need to support multiple ports.
++ (NSString *)searchForDevice:(NSString *)deviceName {
+    NSString *searchString = [@"tty." stringByAppendingString:deviceName];
+    NSString *result = [[NSString alloc] init];
+    
+    NSError * error;
+    NSArray * devContents = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:@"/dev/" error:&error];
+    
+    for(NSString *fileName in devContents){
+        if([fileName containsString:searchString]){
+            NSLog(@"%@", fileName);
+            result = [@"/dev/" stringByAppendingString:fileName];
+        }
+    }
+    
+    return result;
 }
 
 

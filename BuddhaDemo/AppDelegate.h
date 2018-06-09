@@ -7,12 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-//#import <Cocoa/Cocoa.h>
-#import <TGStreamMac/TGStreamDelegate.h>
 
 @interface AppDelegate : NSObject <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+
++ (NSString *)searchForDevice:(NSString *)deviceName;
 
 
 @end

@@ -17,9 +17,80 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="test" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="XdD-cL-UCu">
+                                <rect key="frame" x="197" y="938" width="363" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P6S-QO-YY4">
+                                <rect key="frame" x="168" y="1009" width="49" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Init File"/>
+                                <connections>
+                                    <action selector="InitFile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lg2-sR-1AA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wMR-lq-m6j">
+                                <rect key="frame" x="178" y="1060" width="68" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Clear Log"/>
+                                <connections>
+                                    <action selector="logClear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8qb-AF-r8q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NSG-Pc-5Rs">
+                                <rect key="frame" x="291" y="1009" width="73" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Tear Down"/>
+                                <connections>
+                                    <action selector="TearDown:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RSt-sO-Xds"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6vw-gc-QQ9">
+                                <rect key="frame" x="395" y="1009" width="96" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Record Beigin"/>
+                                <connections>
+                                    <action selector="recordBegin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4ck-65-hvv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mnd-rW-kwK">
+                                <rect key="frame" x="557" y="1009" width="79" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Record End"/>
+                                <connections>
+                                    <action selector="recordEnd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wun-0y-6AO"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="PaY-gb-DT8" userLabel="Indicator View">
+                                <rect key="frame" x="126" y="1066" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wl1-K2-jFO">
+                                <rect key="frame" x="568" y="941" width="68" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="initBT"/>
+                                <connections>
+                                    <action selector="InitBT:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h5n-RB-m4p"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="InitBT" destination="Wl1-K2-jFO" id="JfC-jN-ylc"/>
+                        <outlet property="InitFile" destination="P6S-QO-YY4" id="PSa-eB-4Yx"/>
+                        <outlet property="TearDown" destination="NSG-Pc-5Rs" id="Mur-vw-JE1"/>
+                        <outlet property="TextView" destination="XdD-cL-UCu" id="wo5-z9-HGt"/>
+                        <outlet property="clearLog" destination="wMR-lq-m6j" id="eD2-xK-bHi"/>
+                        <outlet property="indicatorView" destination="PaY-gb-DT8" id="Vh1-G2-ajK"/>
+                        <outlet property="recordBegin" destination="6vw-gc-QQ9" id="drn-KB-jeU"/>
+                        <outlet property="recordEnd" destination="Mnd-rW-kwK" id="K4y-qu-V9c"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

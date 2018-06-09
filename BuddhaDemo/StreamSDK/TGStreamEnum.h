@@ -7,6 +7,15 @@
  * @copyright   Copyright (c) 2015 com.neurosky. All rights reserved.
  */
 
+//device type MindWaveMobile or CardioStartKit
+typedef NS_ENUM(NSInteger, DEVICE_TYPE){
+    
+    DEVICE_TYPE_UNKNOWN = 0,
+    DEVICE_TYPE_MindWaveMobile = 1,
+    DEVICE_TYPE_CardioChipStarterKit = 2,
+    
+};
+
 //data type correspond to different device
 typedef NS_ENUM(NSUInteger, MindDataType)
 {
@@ -44,24 +53,28 @@ typedef NS_ENUM(NSUInteger, ParserType){
 
 //connection states
 typedef NS_ENUM(NSUInteger,ConnectionStates){
-    
-    STATE_CONNECTED = 1,
-    
-    STATE_WORKING = 2,//stream processing
-    
-    STATE_STOPPED = 3,//tear down stream
    
-    STATE_DISCONNECTED = 4,
+    STATE_INIT = 0,
+   
+    STATE_CONNECTING = 1,
     
-    STATE_COMPLETE = 5,//Stream Processed Complete
+    STATE_CONNECTED = 2,
+    
+    STATE_WORKING = 3,
+    
+    STATE_STOPPED = 4,
+   
+    STATE_DISCONNECTED = 5,
+    
+    STATE_COMPLETE = 6,
    
     STATE_RECORDING_START = 7,
    
     STATE_RECORDING_END = 8,
     
-    STATE_FAILED = 100, //File Stream Init Fail
+    STATE_FAILED = 100,
     
-    STATE_ERROR = 101 //Not Connected
+    STATE_ERROR = 101
 };
 
 //raw data  record error

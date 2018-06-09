@@ -25,7 +25,7 @@
  @param obj  return a obj such EEGPower instance
  @return void
  */
--(void)onDataReceived:(NSInteger)datatype data:(int)data obj:(NSObject *)obj;
+-(void)onDataReceived:(NSInteger)datatype data:(int)data obj:(NSObject *)obj deviceType:(DEVICE_TYPE)deviceType;
 
 
 @optional
@@ -54,7 +54,6 @@
  @param flag  record error flag
  @return void
  */
-
 -(void)onRecordFail:(RecrodError)flag;
 
 @end
